@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <title></title>
+</head>
+<body>
+{% for book in books %}
+        <h4>{{ book.title }}</h4>
+        <h3> {{ book.author }}</h3>
+        <p>{{ book.text }}</p>
+        <h3>{{ book.price }}</h3>
+    <p>---------------------------</p>
+    {% endfor %}
+</body>
+</html>
+
+
+
+{#{% extends '_base.html' %}#}
+{##}
+{#{% block title_page %}#}
+{##}
+{#{% endblock %}#}
+{##}
+{#{% block content %}#}
+{#    {% for book in books %}#}
+{#        <h4>{{ book.title }}</h4>#}
+{#        <h3> {{ book.author }}</h3>#}
+{#        <p>{{ book.text }}</p>#}
+{#        <h3>{{ book.price }}</h3>#}
+{##}
+{#    {% endfor %}#}
+{#{% endblock %}#}
